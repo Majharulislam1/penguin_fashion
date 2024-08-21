@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin Fashion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    bebas: ['"Bebas Neue"', '"sans-serif"']
+                },
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    
+
+   
+    <section class="bg-[#fffbf0] h-screen">
+        <header class="w-11/12 mx-auto"> 
+            <div class="navbar flex justify-between items-center py-4">
+                <div class="logo">
+                    <img class="w-[18.18rem] h-[2.45rem]"  src="./icons/logo.png" alt="">
+                </div>
+                
+                <div class="nav_items flex justify-around w-[30%] items-center">
+                    <p>home</p>
+                    <p>Product</p>
+                    <p>About us</p>
+                    <p>Contact us</p>
+                </div>
+        
+                <div class="hamburger lg:hidden sm:block">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
+                        <g fill="#363958" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path></g></g>
+                        </svg>
+                </div>
+            </div>
+    
+            <!-- nav section complete  -->
+    
+            <div class="hero_section grid grid-cols-2 items-center justify-between">
+                   <div class="hero_content">
+                        <h1 class="text-[#363958] text-[5rem] font-bebas font-bold leading-[5rem] pb-4"> <span class="text-[#FABE4C]">Be the Penguins</span><br>
+                            of Winter</h1>
+                        <p class="text-[#363958] pb-4">Lorem Ipsum is simply dummy text of the printing <br>
+                            and typesetting industry.</p>
+                        <button class="px-5 py-2 rounded-[5px] bg-gradient-to-br flex items-center  from-[#a4bc46] to-[#85a019] text-white">
+                             <img src="./icons/cart-60.png" class="w-5 mr-1" alt="">
+                             Buy Now </button>
+                   </div>
+                   <div class="hero_img flex justify-center">
+                        <img  src="./images/model.png" alt="">
+                   </div>
+            </div>
+        </header>
+    </section>
+
+    <main class="w-11/12 mx-auto">
+
+        <div class="product-title">
+             <h2 class="text-[3rem] font-bebas text-[#363958] font-bold py-6">Women Jacket</h2>
+        </div>
+
+         <!-- card section -->
+
+         <div class="grid grid-cols-3">
+              <div class="p-4 bg-white rounded-[20px] shadow-inner">
+                  <div class="imag_card bg-[#f1f1f1] rounded-[10px] p-4  flex justify-center items-center">
+                      <img src="./images/jacket-1.png" class="w-3/4 h-auto" alt="">
+                  </div>
+                   <div class="content_card p-3">
+                       <h3 class="text-[1.5rem] font-bold pt-2 pb-4 text-[#363958]">Yellow Coat Jacket</h3>
+                       <p class="text-[1rem] pb-[0.5rem]">Lorem Ipsum is simply dummy text of the 
+                        printing and typesetting industry.</p>
+                        <div class="flex justify-between items-center">
+                             <div class="price">
+                                  <h2 class="text-[2.3rem] text-[#FABE4C] font-bold">$234</h2>
+                             </div>
+                             <div class="button">
+                                <button class="px-5 py-2 rounded-[5px] bg-gradient-to-br flex items-center  from-[#a4bc46] to-[#85a019] text-white">
+                                    <img src="./icons/cart-60.png" class="w-5 mr-1" alt="">
+                                    Buy Now </button>
+                             </div>
+                        </div>
+                   </div>
+              </div>
+              <div></div>
+              <div></div>
+         </div>
+          
+    </main>
+
+    <footer>
+
+    </footer>
+
+  
+
+</body>
+
+</html>
