@@ -12,7 +12,23 @@
 
     <script>
         tailwind.config = {
-            theme: {
+            theme: { screens: {
+      xs: '320px',
+      sm: '375px',
+      lsm: '425px',
+
+      md: '768px',
+      // => @media (min-width: 768px) { ... }
+
+      lg: '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      xl: '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
                 fontFamily: {
                     bebas: ['"Bebas Neue"', '"sans-serif"']
                 },
@@ -38,14 +54,14 @@
                     <img class="w-[18.18rem] h-[2.45rem]"  src="./icons/logo.png" alt="">
                 </div>
                 
-                <div class="nav_items flex justify-around w-[30%] items-center">
+                <div class="nav_items sm:hidden md:hidden lg:flex justify-around w-[30%] items-center">
                     <p>home</p>
                     <p>Product</p>
                     <p>About us</p>
                     <p>Contact us</p>
                 </div>
         
-                <div class="hamburger lg:hidden sm:block">
+                <div class="hamburger  lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
                         <g fill="#363958" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path></g></g>
                         </svg>
@@ -54,7 +70,7 @@
     
             <!-- nav section complete  -->
     
-            <div class="hero_section grid grid-cols-2 items-center justify-between">
+            <div class="hero_section grid lg:grid-cols-2 sm:grid-cols-1  items-center justify-between">
                    <div class="hero_content">
                         <h1 class="text-[#363958] text-[5rem] font-bebas font-bold leading-[5rem] pb-4"> <span class="text-[#FABE4C]">Be the Penguins</span><br>
                             of Winter</h1>
@@ -64,7 +80,7 @@
                              <img src="./icons/cart-60.png" class="w-5 mr-1" alt="">
                              Buy Now </button>
                    </div>
-                   <div class="hero_img flex justify-center">
+                   <div class="hero_img flex justify-center pb-8">
                         <img  src="./images/model.png" alt="">
                    </div>
             </div>
@@ -258,6 +274,9 @@
              </div>
         </div>
                
+        <div class="py-4 pt-7">
+              <p class="text-center text-sm text-gray-400">All Right reserved || Majharul islam</p>
+        </div>
     </footer>
 
   
